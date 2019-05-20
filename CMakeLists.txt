@@ -1,8 +1,5 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.9)
 
-if (${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
-	message(FATAL_ERROR "In source builds not allowed. Please make a new directory" )
-endif()
 
 set(PROJECT			42sh)
 set(VERSION			1.0)

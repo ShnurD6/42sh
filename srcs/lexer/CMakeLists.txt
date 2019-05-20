@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.9)
 project(lexer)
 
 set(SRC				main.c lexer.c lexer_tools.c)
