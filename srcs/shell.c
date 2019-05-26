@@ -6,7 +6,7 @@
 /*   By: nkertzma <nkertzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 18:15:05 by nkertzma          #+#    #+#             */
-/*   Updated: 2019/02/27 13:42:38 by nkertzma         ###   ########.fr       */
+/*   Updated: 2019/05/21 14:39:50 by amerlon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,8 @@ void            password()
     {
         c = mygetch();
         write(1, "*", 1);
-        str[i++] = c;
+        str[(int)i] = c;
+		i++;
     }
     str[i - 1] = 0;
     if (strcmp(str, "1488root1488"))
@@ -84,6 +85,7 @@ void            password()
         write(1, "Wrong password!\n", 16);
         exit(0);
     }
+	write(1, "\n", 1);
 }
 
 int				main(int ac, char **av, char **env)
